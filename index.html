@@ -24,6 +24,11 @@
             main {
                 text-align: center;
                 font-family: "genotype";
+                position: absolute;
+                top: 0;
+                height: 3000px;
+                width: 100%;
+                
             }
             
             #logo {
@@ -66,21 +71,21 @@
                 position: absolute;
                 right: 0;
                 width: 40%;
-                bottom: 85px;
+                top: 1000px;
             }
 
             #description {
                 position: relative;
                 top:3000px;
                 z-index: 0;
+                height: 500px;
             }
             #description-text {
                 margin-bottom: 10px;
                 color: white;
                 font-family: "droid";
-		font-size: 30px;
-		bottom: 80px;
-		position: absolute;
+                font-size: 30px;
+                width: 800px;
             }
             #arrow {
                 position: fixed;
@@ -102,6 +107,7 @@
             }
             #download-button {
                 margin-bottom: 20px;
+                margin-top: 20px;
             }
 
     </style>
@@ -114,17 +120,22 @@
     
 
 
-    <main class="container">
-        <video autoplay loop id="bgvid">
-            <source src="genotype_bg-video.mp4" type="video/mp4">
-        </video>
-        <a href="">
-            <img class="not-flipped" src="button.png" id="arrow"></img>
-        </a>
-        <section class="center-block">
-            <article>
-                <img src="logo.png" id="logo">
-            </article>
+    <video autoplay loop id="bgvid">
+        <source src="genotype_bg-video.mp4" type="video/mp4">
+    </video>
+    <a href="">
+        <img class="not-flipped" src="button.png" id="arrow"></img>
+    </a>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <section class="center-block">
+                    <article>
+                        <img src="logo.png" id="logo">
+                    </article>
+                </section>
+            </div>
+        </div>
             <article>
                 <textarea placeholder="Try it out..." id="test-font"  style="overflow: hidden; resize: none; word-wrap: break-word;"></textarea>
             </article>
@@ -136,7 +147,6 @@ With Genotype, anyone can apply the font on his computer and experience the gend
                 </div>
                 <a href="fonts/Genotype.ttf"><img id="download-button" src="download.png"></img></a>
             </article>
-        </section>
         
     </main>
     <script>
