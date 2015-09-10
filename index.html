@@ -15,6 +15,10 @@
                     font-family: genotype;
                     src: url(fonts/Genotype.ttf);
             }
+            @font-face {
+                    font-family: droid;
+                    src: url(fonts/DroidSans.ttf);
+            }
 
 
             main {
@@ -28,6 +32,7 @@
                 margin-right: auto;
                 left: 0;
                 right: 0;
+		margin-top: 100px;
             }
 
             video#bgvid { 
@@ -47,33 +52,35 @@
             #test-font {
                 width: 60%;
                 margin-top: 100px;
-                font-size: 20px;
+                font-size: 40px;
                 color: white;
                 background-color:rgba(0, 0, 0, 0.5);
                 font-variant-ligatures: common-ligatures;
                 -webkit-font-feature-settings: "liga" 1, "dlig" 1;
                 -moz-font-feature-settings: "liga" 1, "dlig" 1;
                 -ms-font-feature-settings: "liga" 1, "dlig" 1;
-                height: 200px;
+                height: 300px;
                 left: 0;
                 margin-left: auto;
                 margin-right: auto;
                 position: absolute;
                 right: 0;
-                width: 60%;
-                bottom: 20px;
+                width: 40%;
+                bottom: 85px;
             }
 
             #description {
                 position: relative;
-                top:2000px;
+                top:3000px;
                 z-index: 0;
             }
             #description-text {
-                width: 60%;
                 margin-bottom: 10px;
                 color: white;
-                font-family: "Helvetica";
+                font-family: "droid";
+		font-size: 30px;
+		bottom: 80px;
+		position: absolute;
             }
             #arrow {
                 position: fixed;
@@ -94,7 +101,7 @@
                transition-duration: 1s;
             }
             #download-button {
-                margin-bottom: 10px;
+                margin-bottom: 20px;
             }
 
     </style>
@@ -124,8 +131,6 @@
             <article class="center-block" id="description">
                 <div class="center-block" id="description-text">
                     The notion of gender is continuously evolving, and what started as a clear product of our biological sex is now considered to be constructed by society and defined by discourse. 
-This realization was followed by great confusion and resentment within society, as people contest over the ambiguous definitions of gender and their relation to biology.
-We propose to completely get rid of our gender associations and revert back to our absolute and non-deniable biological nature. We can do that by changing discourse, our language.
 Genotype is a digital font that instantly replaces any words that are associated with gender with clear biological definitions, these are our genetic definitions of sex – The X and Y chromosomes.
 With Genotype, anyone can apply the font on his computer and experience the genderless web. 
                 </div>
